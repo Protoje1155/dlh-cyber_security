@@ -22,3 +22,9 @@
 ## Task 4:
 ### Description:
 - **ls** can list the contents of multiple directories by specifying them as arguments
+
+## Task 5:
+### Description:
+- **cp -u** copies files only when:
+1. Source file is newer than destination file
+2. File does not exist in destination
