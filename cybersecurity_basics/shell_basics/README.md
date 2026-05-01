@@ -14,3 +14,7 @@
 ## Task 2:
 ### Description:
 - The -a option enables displaying **hidden** files
+
+## Task 3:
+### Description:
+- **cd** switches to the previous directory by reading **$OLDPWD**
