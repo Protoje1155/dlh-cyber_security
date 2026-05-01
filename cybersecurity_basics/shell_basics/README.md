@@ -18,3 +18,7 @@
 ## Task 3:
 ### Description:
 - **cd -** switches to the previous directory by reading **$OLDPWD**
+
+## Task 4:
+### Description:
+- **ls** can list the contents of multiple directories by specifying them as arguments
