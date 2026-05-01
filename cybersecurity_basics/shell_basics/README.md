@@ -17,4 +17,4 @@
 
 ## Task 3:
 ### Description:
-- **cd** switches to the previous directory by reading **$OLDPWD**
+- **cd -** switches to the previous directory by reading **$OLDPWD**
