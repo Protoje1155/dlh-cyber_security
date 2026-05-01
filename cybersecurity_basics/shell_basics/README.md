@@ -10,3 +10,7 @@
 - **ls** lists the contents of directories
 - The -l option enables the **long listing format**
 - It shows detailed information about each file (permissions, owner, size, date)
+
+## Task 2:
+### Description:
+- The -a option enables displaying **hidden** files
