@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# $$ expands to the process ID of the current shell or script
+echo "$$"
