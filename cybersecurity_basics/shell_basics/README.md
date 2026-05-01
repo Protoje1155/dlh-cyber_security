@@ -4,6 +4,7 @@
 ### Description:
 - **source** executes commands from a file in the current shell
 - Changes made by **cd** affect the current shell
+- **cd ~** returns the user back to their home directory
 
 ## Task 1:
 ### Description:
