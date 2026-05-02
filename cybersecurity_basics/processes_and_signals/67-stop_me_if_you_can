@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# -f tells pkill to match the full cmd line, sends sigterm to process
+pkill -f "7-highlander"
