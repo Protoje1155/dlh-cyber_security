@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# a process can't catch SIGKILL, the kernel handles it (SIGKILL = 9)
+pkill -f "7-highlander" -9
