@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# creates a file containing its pid, catches several signals and handles them, deletes the file at the end
+path="/tmp/myscript.pid"
+
+trap 'echo "I hate the kill command"; rm "$path"; exit' SIGTERM
+trap 'echo "Y U no love me?!"' SIGINT
+trap 'rm "$path"; exit' SIGQUIT
+
+echo "$$" > "$path"
+
+while true; do
+	echo "To infinity and beyond"
+	sleep 2
+done
