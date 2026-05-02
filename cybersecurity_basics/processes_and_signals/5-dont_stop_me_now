@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
-# -f tells pgrep to match agains the full command line, xargs builds commands from input via stdin (-15 is optional), -r tells xargs to not run the command if stdin is empty
-pgrep -f "4-to_infinity_and_beyond" | xargs -r kill -15
+# -f tells pgrep to match against the full command line, (-15 is optional)
+pid=$(pgrep -f "4-to_infinity_and_beyond")
+kill -15 $pid
