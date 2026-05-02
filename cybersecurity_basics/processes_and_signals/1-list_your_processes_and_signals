@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Show all processes (all users, including those without a TTY) in a hierarchical tree view
+ps aux --forest
