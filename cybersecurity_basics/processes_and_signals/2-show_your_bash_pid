@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# filters name bash out
+# filters for lines containing 'bash'
 # shellcheck disable=SC2009
 ps aux --forest | grep 'bash'
