@@ -1,0 +1,41 @@
+#!/usr/bin/env bash
+# init script to start, stop and restart a background process
+
+pid_path="/tmp/my_process.pid"
+
+start()
+{		
+	./manage_my_process &
+	echo "$!" > "$pid_path"
+}
+
+stop()
+{
+	pid=$(cat "$pid_path")
+	kill "$pid"
+	rm "$pid_path"
+}
+
+restart()
+{
+	stop
+	start
+}
+
+case "$1" in
+	start)
+		start
+		echo "manage_my_process started"
+		;;
+	stop)
+		stop
+		echo "manage_my_process stopped"	
+		;;
+	restart)
+		restart
+		echo "manage_my_process restarted"
+		;;
+	*)
+		echo "Usage: manage_my_process {start|stop|restart}"
+		;;
+esac
