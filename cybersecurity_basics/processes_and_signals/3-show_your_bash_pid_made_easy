@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# -l: List the process name as well as the process ID.
+pgrep -l bash
